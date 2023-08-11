@@ -12,6 +12,8 @@
 
   $database = mysqli_select_db($connection, DB_DATABASE);
 
+  echo "db selected";
+
   $getFilmTable = "SELECT * FROM Film";
 
   $results = mysqli_query($connection, $getFilmTable);
