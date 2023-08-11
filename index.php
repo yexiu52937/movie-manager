@@ -14,8 +14,10 @@
 
   // $database = mysqli_select_db($connection, DB_DATABASE);
 
-   echo "db selected";
+  $connection->query("USE Film;");
   $connection->query("SELECT * FROM Film;");
+
+  echo "db selected";
 
   $getFilmTable = "SELECT * FROM Film";
 
