@@ -7,13 +7,14 @@
   $connection = new mysqli(
                 DB_SERVER,
                 DB_USERNAME,
-                DB_PASSWORD,
-                DB_DATABASE
+                DB_PASSWORD
             );
 
   // if (mysqli_connect_error()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
   // $database = mysqli_select_db($connection, DB_DATABASE);
+
+  $connection->query("SELECT * FROM Film;");
 
   echo "db selected";
 
