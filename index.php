@@ -15,9 +15,8 @@
   // $database = mysqli_select_db($connection, DB_DATABASE);
 
   $connection->query("USE cenima;");
-  $connection->query("SELECT * FROM Film;");
-
   echo "db selected";
+  $connection->query("SELECT * FROM Film;");
 
   $getFilmTable = "SELECT * FROM Film";
 
