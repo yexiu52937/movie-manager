@@ -1,4 +1,8 @@
-<?php include "../inc/dbinfo.inc";
+<?php
+
+  echo "test";
+  
+  include "../inc/dbinfo.inc";
 
   /* Connect to MySQL and select the database. */
   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
