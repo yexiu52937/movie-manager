@@ -3,20 +3,13 @@
   include "../inc/dbinfo.inc";
 
   /* Connect to MySQL and select the database. */
-  // $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
-  $connection = new mysqli(
-                DB_SERVER,
-                DB_USERNAME,
-                DB_PASSWORD
-            );
 
-  // if (mysqli_connect_error()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo DB_SERVER . DB_USERNAME . DB_PASSWORD . DB_DATABASE;
+  $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+
+  if (mysqli_connect_error()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
   // $database = mysqli_select_db($connection, DB_DATABASE);
-
-  $connection->query("USE cenima;");
-  echo "db selected";
-  $connection->query("SELECT * FROM Film;");
 
   $getFilmTable = "SELECT * FROM Film";
 
