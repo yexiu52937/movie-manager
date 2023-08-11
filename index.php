@@ -7,7 +7,7 @@
   /* Connect to MySQL and select the database. */
   echo DB_SERVER;
   $db_host = 'test-rds.cb783h40dj22.us-east-2.rds.amazonaws.com';
-  echo $db_host;
+  if (DB_SERVER == $db_host) echo "equal";
   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
   echo "connecting";
 
