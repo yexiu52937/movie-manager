@@ -13,13 +13,6 @@
     $raw_results = mysqli_query($connection, $searchInTitle);
     if ($raw_results === false) {
         echo mysqli_error($connection);
-    } else {
-        if(mysqli_num_rows($raw_results) > 0){
-            echo "Search results for '".$query."'.";
-            echo "<br>";
-        } else {
-            echo "No result";
-        }
     }
 
 ?>
@@ -31,7 +24,15 @@
     <meta charset="utf-8">
   </head>
 
+
   <body>
+    <?php if(mysqli_num_rows($raw_results) > 0){
+            echo "Search results for '".$query."'.";
+            echo "<br>";
+        } else {
+            echo "No result";
+        }
+    ?>
     <form action="search.php" method="GET">
       <input type="text" name="title_query"/>
       <input type="submit" value="Search"/>
