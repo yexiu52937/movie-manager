@@ -28,7 +28,7 @@
         echo mysqli_error($connection);
     } else {
         if(mysqli_num_rows($raw_results) > 0){
-            echo "Searching".$query;
+            echo "Search results for '".$query."'.";
             echo "<br>";
         }
     }
