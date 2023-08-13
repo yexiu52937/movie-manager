@@ -26,6 +26,11 @@
 
 
   <body>
+
+    <form action="search.php" method="GET">
+      <input type="text" name="title_query"/>
+      <input type="submit" value="Search"/>
+    </form>
     <?php if(mysqli_num_rows($raw_results) > 0){
             echo "Search results for '".$query."'.";
             echo "<br>";
@@ -33,10 +38,6 @@
             echo "No result";
         }
     ?>
-    <form action="search.php" method="GET">
-      <input type="text" name="title_query"/>
-      <input type="submit" value="Search"/>
-    </form>
     <table>
         <tr>
             <th>Name</th>
