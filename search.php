@@ -22,14 +22,16 @@
 //   }
 
     $query = $_GET['title_query'];
+    echo $query;
     $searchInTitle = "SELECT * FROM Film WHERE titolo LIKE '%".$query."%';";
     $raw_results = mysqli_query($connection, $searchInTitle);
     if ($raw_results === false) {
         echo mysqli_error($connection);
     } else {
         if(mysqli_num_rows($raw_results) > 0){
+            echo "Searching".$query;
 			while($results = mysqli_fetch_array($raw_results)){
-				echo $results;
+				echo $results['titolo'];
 			}
 		}
 		else{
