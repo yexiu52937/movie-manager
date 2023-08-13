@@ -21,7 +21,7 @@
             echo "No result";
         }
     }
-    
+
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +32,10 @@
   </head>
 
   <body>
+    <form action="search.php" method="GET">
+      <input type="text" name="title_query"/>
+      <input type="submit" value="Search"/>
+    </form>
     <table>
         <tr>
             <th>Name</th>
