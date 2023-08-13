@@ -22,7 +22,6 @@
 //   }
 
     $query = $_GET['title_query'];
-    echo $query;
     $searchInTitle = "SELECT * FROM Film WHERE titolo LIKE '%".$query."%';";
     $raw_results = mysqli_query($connection, $searchInTitle);
     if ($raw_results === false) {
@@ -30,12 +29,42 @@
     } else {
         if(mysqli_num_rows($raw_results) > 0){
             echo "Searching".$query;
-			while($results = mysqli_fetch_array($raw_results)){
-				echo $results['titolo'];
-			}
-		}
-		else{
-			echo "No results";
-		}
+            echo "<br>";
+        }
     }
+	// 		while($results = mysqli_fetch_array($raw_results)){
+	// 			echo $results['titolo']."|".$results[];
+	// 		}
+	// 	}
+	// 	else{
+	// 		echo "No results";
+	// 	}
+    // }
 ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Country</th>
+            <th>Description</th>
+        </tr>
+        <?php while($results = mysqli_fetch_array($raw_results)): ?>
+        <tr>
+            <td><?= $results['titolo']; ?></td>
+            <td><?= $results['anno']; ?></td>
+            <td><?= $results['nazionalita']; ?></td>
+            <td><?= $results['trama']; ?></td>
+        </tr>
+        <?php endwhile; ?>
+    </table>
+  </body>
+</html>
