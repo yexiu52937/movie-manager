@@ -8,19 +8,6 @@
 
     if (mysqli_connect_error()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
-    // $database = mysqli_select_db($connection, DB_DATABASE);
-
-//   $getFilmTable = "SELECT * FROM Film";
-
-//   $results = mysqli_query($connection, $getFilmTable);
-
-//   if ($results === false) {
-//     echo mysqli_error($connection);
-//   } else {
-//     $Films = mysqli_fetch_all($results);
-//     var_dump($Films);
-//   }
-
     $query = $_GET['title_query'];
     $searchInTitle = "SELECT * FROM Film WHERE titolo LIKE '%".$query."%';";
     $raw_results = mysqli_query($connection, $searchInTitle);
@@ -30,16 +17,11 @@
         if(mysqli_num_rows($raw_results) > 0){
             echo "Search results for '".$query."'.";
             echo "<br>";
+        } else {
+            echo "No result";
         }
     }
-	// 		while($results = mysqli_fetch_array($raw_results)){
-	// 			echo $results['titolo']."|".$results[];
-	// 		}
-	// 	}
-	// 	else{
-	// 		echo "No results";
-	// 	}
-    // }
+    
 ?>
 
 <!DOCTYPE html>
