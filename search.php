@@ -28,7 +28,7 @@
 
   <body>
 
-    <form action="search.php" method="GET">
+    <form action="search.php" method="GET" id="search-form">
       <input type="text" name="title_query"/>
       <input type="submit" value="Search"/>
     </form>
@@ -39,7 +39,7 @@
             echo "No result";
         }
     ?>
-    <table>
+    <table id="result-table">
         <tr>
             <th>Name</th>
             <th>Year</th>
