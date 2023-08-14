@@ -29,14 +29,16 @@
   <body>
 
     <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-12">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
+      <div class="form-group">
+        <div class="col-12">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
+          </div>
         </div>
-      </div>
-
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Search</button>
+  
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
       </div>
     </form>
     
