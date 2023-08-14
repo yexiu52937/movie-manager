@@ -8,10 +8,10 @@
 
   <body>
     <div class="mt-2 d-flex justify-content-center center-v">
-      <form action="search.php" class="row row-cols-lg-auto g-3 align-items-center" name="title_query" method="GET">
+      <form action="search.php" class="row row-cols-lg-auto g-3 align-items-center" method="GET">
         <div class="col-12">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Movie title">
+            <input type="text" name="title_query" class="form-control" placeholder="Movie title">
           </div>
         </div>
         
