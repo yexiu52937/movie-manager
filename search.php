@@ -28,20 +28,22 @@
 
 
   <body>
-
-    <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="form-group">
-        <div class="col-12">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
+    <div class="d-flex justify-content-center">
+      <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="form-group">
+          <div class="col-12">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
+            </div>
+          </div>
+    
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Search</button>
           </div>
         </div>
-  
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Search</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
+
     
     <?php if(mysqli_num_rows($raw_results) > 0){
             echo "Search results for '".$query."'.";
