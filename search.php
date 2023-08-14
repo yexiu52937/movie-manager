@@ -28,7 +28,7 @@
 
 
   <body>
-    <div class="d-flex justify-content-center">
+<!--     <div class="d-flex justify-content-center">
       <form action="search.php" method="GET">
         <div class="form-group">
           <div class="col-auto">
@@ -40,6 +40,21 @@
           <div class="col-auto">
             <button type="submit" class="btn btn-primary">Search</button>
           </div>
+        </div>
+      </form>
+    </div> -->
+
+    <div class="d-flex justify-content-center">
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+        <div class="input-group">
+          <div class="input-group-text">@</div>
+            <input type="text" class="form-control" placeholder="Movie title">
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
