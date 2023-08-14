@@ -28,27 +28,11 @@
 
 
   <body>
-<!--     <div class="d-flex justify-content-center">
-      <form action="search.php" method="GET">
-        <div class="form-group">
-          <div class="col-auto">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
-            </div>
-          </div>
-    
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary">Search</button>
-          </div>
-        </div>
-      </form>
-    </div> -->
 
     <div class="d-flex justify-content-center">
       <form class="row row-cols-lg-auto g-3 align-items-center">
         <div class="col-12">
-        <div class="input-group">
-          <div class="input-group-text">@</div>
+          <div class="input-group">
             <input type="text" class="form-control" placeholder="Movie title">
           </div>
         </div>
