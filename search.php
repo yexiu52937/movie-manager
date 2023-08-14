@@ -43,14 +43,15 @@
       </form>
     </div>
 
-    
-    <?php if(mysqli_num_rows($raw_results) > 0){
-            echo "Search results for '".$query."'.";
-            echo "<br>";
-        } else {
-            echo "No result";
-        }
-    ?>
+    <div class="d-flex justify-content-center">
+      <?php if(mysqli_num_rows($raw_results) > 0){
+              echo "Search results for '".$query."'.";
+              echo "<br>";
+          } else {
+              echo "No result";
+          }
+      ?>
+    </div>
     <table id="result-table">
         <tr>
             <th>Name</th>
