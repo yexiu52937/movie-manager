@@ -8,7 +8,7 @@
 
   <body>
     <div class="mt-2 d-flex justify-content-center center-v">
-      <form class="row row-cols-lg-auto g-3 align-items-center">
+      <form action="search.php" class="row row-cols-lg-auto g-3 align-items-center">
         <div class="col-12">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Movie title">
