@@ -21,6 +21,7 @@
 <html>
   <head>
     <title>Search Results</title>
+    <link rel="stylesheet" href="style.css"></link>
     <meta charset="utf-8">
   </head>
 
