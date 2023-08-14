@@ -52,7 +52,8 @@
           }
       ?>
     </div>
-    <table id="result-table">
+
+    <table id="result-table" class="table">
         <tr>
             <th>Name</th>
             <th>Year</th>
