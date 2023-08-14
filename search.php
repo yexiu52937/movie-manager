@@ -23,6 +23,12 @@
     <title>Search Results</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <meta charset="utf-8">
+    <style>
+      .row-center{
+          text-align:center;
+          margin-top: 120px;
+      }
+    </style>
   </head>
 
 
