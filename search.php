@@ -28,10 +28,18 @@
 
   <body>
 
-    <form action="search.php" method="GET" id="search-form">
-      <input type="text" name="title_query"/>
-      <input type="submit" value="Search"/>
+    <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center">
+      <div class="col-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
     </form>
+    
     <?php if(mysqli_num_rows($raw_results) > 0){
             echo "Search results for '".$query."'.";
             echo "<br>";
