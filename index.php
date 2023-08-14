@@ -7,16 +7,18 @@
   </head>
 
   <body>
-    <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-12">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Movie title" name="title_query"/>
+    <div class="mt-2 d-flex justify-content-center center-v">
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Movie title">
+          </div>
         </div>
-      </div>
-
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Search</button>
-      </div>
-    </form>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
