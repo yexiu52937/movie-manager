@@ -1,4 +1,4 @@
-table {
+.result-table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
@@ -24,6 +24,6 @@ th, td {
   padding: 20px;
 }
 
-form {
+.search-form {
   align-items: center;
 }
