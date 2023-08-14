@@ -29,7 +29,7 @@
 
   <body>
 
-    <div class="mt-1 mx-auto">
+    <div class="mt-2 d-flex justify-content-center">
       <form class="row row-cols-lg-auto g-3 align-items-center">
         <div class="col-12">
           <div class="input-group">
