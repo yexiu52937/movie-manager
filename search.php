@@ -52,14 +52,15 @@
           }
       ?>
     </div>
-
-    <table id="result-table" class="table">
+<div>
+    <table id="result-table" class="table table-bordered table-striped-columns table-hover" style="width: 90%; margin-left: auto; margin-right: auto;">
         <tr>
-            <th>Name</th>
-            <th>Year</th>
-            <th>Country</th>
-            <th>Description</th>
-        </tr>
+            <th scope="col">Name</th>
+            <th scope="col">Year</th>
+            <th scope="col">Country</th>
+            <th scope="col">Description</th>
+	</tr>
+	<tbody class="table-group-divider">
         <?php while($results = mysqli_fetch_array($raw_results)): ?>
         <tr>
             <td><?= $results['titolo']; ?></td>
@@ -69,5 +70,6 @@
         </tr>
         <?php endwhile; ?>
     </table>
+</div>
   </body>
 </html>
