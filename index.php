@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Movie Manager</title>
+    <link rel="stylesheet" href="style.css"></link>
     <meta charset="utf-8">
   </head>
 
