@@ -28,7 +28,7 @@
 
   <body>
 
-    <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center">
+    <form action="search.php" method="GET" class="row row-cols-lg-auto g-3 align-items-center row-center">
       <div class="form-group">
         <div class="col-12">
           <div class="input-group">
